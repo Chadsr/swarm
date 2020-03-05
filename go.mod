@@ -8,6 +8,7 @@ require (
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
 	github.com/Microsoft/go-winio v0.4.13 // indirect
 	github.com/Microsoft/hcsshim v0.8.6 // indirect
+	github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5 // indirect
 	github.com/VictoriaMetrics/fastcache v1.5.7 // indirect
 	github.com/VividCortex/ewma v1.1.1 // indirect
 	github.com/aristanetworks/goarista v0.0.0-20200224203130-895b4c57c44d // indirect

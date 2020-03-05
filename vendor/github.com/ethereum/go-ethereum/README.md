@@ -39,7 +39,7 @@ directory.
 |  **`geth`**   | Our main Ethereum CLI client. It is the entry point into the Ethereum network (main-, test- or private net), capable of running as a full node (default), archive node (retaining all historical state) or a light node (retrieving data live). It can be used by other processes as a gateway into the Ethereum network via JSON RPC endpoints exposed on top of HTTP, WebSocket and/or IPC transports. `geth --help` and the [CLI Wiki page](https://github.com/ethereum/go-ethereum/wiki/Command-Line-Options) for command line options.          |
 |   `abigen`    | Source code generator to convert Ethereum contract definitions into easy to use, compile-time type-safe Go packages. It operates on plain [Ethereum contract ABIs](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI) with expanded functionality if the contract bytecode is also available. However, it also accepts Solidity source files, making development much more streamlined. Please see our [Native DApps](https://github.com/ethereum/go-ethereum/wiki/Native-DApps:-Go-bindings-to-Ethereum-contracts) wiki page for details. |
 |  `bootnode`   | Stripped down version of our Ethereum client implementation that only takes part in the network node discovery protocol, but does not run any of the higher level application protocols. It can be used as a lightweight bootstrap node to aid in finding peers in private networks.                                                                                                                                                                                                                                                                 |
-|     `evm`     | Developer utility version of the EVM (Ethereum Virtual Machine) that is capable of running bytecode snippets within a configurable environment and execution mode. Its purpose is to allow isolated, fine-grained debugging of EVM opcodes (e.g. `evm --code 60ff60ff --debug`).                                                                                                                                                                                                                                                                     |
+|     `evm`     | Developer utility version of the EVM (Ethereum Virtual Machine) that is capable of running bytecode snippets within a configurable environment and execution mode. Its purpose is to allow isolated, fine-grained debugging of EVM opcodes (e.g. `evm --code 60ff60ff --debug run`).                                                                                                                                                                                                                                                                     |
 | `gethrpctest` | Developer utility tool to support our [ethereum/rpc-test](https://github.com/ethereum/rpc-tests) test suite which validates baseline conformity to the [Ethereum JSON RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) specs. Please see the [test suite's readme](https://github.com/ethereum/rpc-tests/blob/master/README.md) for details.                                                                                                                                                                                                     |
 |   `rlpdump`   | Developer utility tool to convert binary RLP ([Recursive Length Prefix](https://github.com/ethereum/wiki/wiki/RLP)) dumps (data encoding used by the Ethereum protocol both network as well as consensus wise) to user-friendlier hierarchical representation (e.g. `rlpdump --hex CE0183FFFFFFC4C304050583616263`).                                                                                                                                                                                                                                 |
 |   `puppeth`   | a CLI wizard that aids in creating a new Ethereum network.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -98,7 +98,7 @@ Specifying the `--testnet` flag, however, will reconfigure your `geth` instance 
    this.
  * Instead of connecting the main Ethereum network, the client will connect to the test
    network, which uses different P2P bootnodes, different network IDs and genesis states.
-   
+
 *Note: Although there are some internal protective measures to prevent transactions from
 crossing over between the main network and test network, you should make sure to always
 use separate accounts for play-money and real-money. Unless you manually move
@@ -210,10 +210,14 @@ aware of and agree upon. This consists of a small JSON file (e.g. call it `genes
 ```json
 {
   "config": {
-    "chainId": 0,
+    "chainId": <arbitrary positive integer>,
     "homesteadBlock": 0,
+    "eip150Block": 0,
     "eip155Block": 0,
-    "eip158Block": 0
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0
   },
   "alloc": {},
   "coinbase": "0x0000000000000000000000000000000000000000",
@@ -229,8 +233,8 @@ aware of and agree upon. This consists of a small JSON file (e.g. call it `genes
 
 The above fields should be fine for most purposes, although we'd recommend changing
 the `nonce` to some random value so you prevent unknown remote nodes from being able
-to connect to you. If you'd like to pre-fund some accounts for easier testing, you can
-populate the `alloc` field with account configs:
+to connect to you. If you'd like to pre-fund some accounts for easier testing, create
+the accounts and populate the `alloc` field with their addresses.
 
 ```json
 "alloc": {
@@ -290,7 +294,7 @@ also need to configure a miner to process transactions and create new blocks for
 Mining on the public Ethereum network is a complex task as it's only feasible using GPUs,
 requiring an OpenCL or CUDA enabled `ethminer` instance. For information on such a
 setup, please consult the [EtherMining subreddit](https://www.reddit.com/r/EtherMining/)
-and the [Genoil miner](https://github.com/Genoil/cpp-ethereum) repository.
+and the [ethminer](https://github.com/ethereum-mining/ethminer) repository.
 
 In a private network setting, however a single CPU miner instance is more than enough for
 practical purposes as it can produce a stable stream of blocks at the correct intervals
@@ -299,7 +303,7 @@ ones either). To start a `geth` instance for mining, run it with all your usual 
 by:
 
 ```shell
-$ geth <usual-flags> --mine --minerthreads=1 --etherbase=0x0000000000000000000000000000000000000000
+$ geth <usual-flags> --mine --miner.threads=1 --etherbase=0x0000000000000000000000000000000000000000
 ```
 
 Which will start mining blocks and transactions on a single CPU thread, crediting all

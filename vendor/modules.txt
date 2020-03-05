@@ -2,51 +2,45 @@
 bazil.org/fuse
 bazil.org/fuse/fs
 bazil.org/fuse/fuseutil
-# github.com/Azure/azure-pipeline-go v0.0.0-20180607212504-7571e8eb0876
+# github.com/Azure/azure-pipeline-go v0.2.2
 github.com/Azure/azure-pipeline-go/pipeline
-# github.com/Azure/azure-storage-blob-go v0.0.0-20180712005634-eaae161d9d5e
-github.com/Azure/azure-storage-blob-go/2018-03-28/azblob
+# github.com/Azure/azure-storage-blob-go v0.7.0
+github.com/Azure/azure-storage-blob-go/azblob
 # github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78
 github.com/Azure/go-ansiterm
 github.com/Azure/go-ansiterm/winterm
 # github.com/Microsoft/go-winio v0.4.13
 github.com/Microsoft/go-winio
 github.com/Microsoft/go-winio/pkg/guid
-# github.com/Microsoft/hcsshim v0.8.6
-github.com/Microsoft/hcsshim/osversion
-# github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
-github.com/StackExchange/wmi
+# github.com/Nvveen/Gotty v0.0.0-20120604004816-cd527374f1e5
+github.com/Nvveen/Gotty
+# github.com/VictoriaMetrics/fastcache v1.5.7
+github.com/VictoriaMetrics/fastcache
 # github.com/VividCortex/ewma v1.1.1
 github.com/VividCortex/ewma
-# github.com/allegro/bigcache v0.0.0-20190218064605-e24eb225f156
-github.com/allegro/bigcache
-github.com/allegro/bigcache/queue
-# github.com/apilayer/freegeoip v0.0.0-20180702111401-3f942d1392f6
-github.com/apilayer/freegeoip
-# github.com/aristanetworks/goarista v0.0.0-20170210015632-ea17b1a17847
+# github.com/aristanetworks/goarista v0.0.0-20200224203130-895b4c57c44d
 github.com/aristanetworks/goarista/monotime
-# github.com/btcsuite/btcd v0.0.0-20171128150713-2e60448ffcc6
+# github.com/btcsuite/btcd v0.20.1-beta
 github.com/btcsuite/btcd/btcec
 # github.com/caarlos0/env v3.5.0+incompatible
 github.com/caarlos0/env
+# github.com/cespare/xxhash/v2 v2.1.1
+github.com/cespare/xxhash/v2
 # github.com/codahale/hdrhistogram v0.0.0-20161010025455-3a0bb77429bd
 github.com/codahale/hdrhistogram
-# github.com/containerd/containerd v1.2.7
-github.com/containerd/containerd/errdefs
 # github.com/containerd/continuity v0.0.0-20190426062206-aaeac12a7ffc
-github.com/containerd/continuity/fs
 github.com/containerd/continuity/pathdriver
-github.com/containerd/continuity/syscallx
-github.com/containerd/continuity/sysx
 # github.com/davecgh/go-spew v1.1.1
 github.com/davecgh/go-spew/spew
 # github.com/deckarep/golang-set v0.0.0-20180603214616-504e848d77ea
 github.com/deckarep/golang-set
+# github.com/dlclark/regexp2 v1.2.0
+github.com/dlclark/regexp2
+github.com/dlclark/regexp2/syntax
 # github.com/docker/distribution v2.7.1+incompatible
 github.com/docker/distribution/digestset
 github.com/docker/distribution/reference
-github.com/docker/distribution/registry/api/errcode
-# github.com/docker/docker v0.7.3-0.20190806133308-ecdb0b22393b
+# github.com/docker/docker v1.4.2-0.20180625184442-8e610b2b55bf
 github.com/docker/docker/api
 github.com/docker/docker/api/types
 github.com/docker/docker/api/types/blkiodev
@@ -64,7 +58,6 @@ github.com/docker/docker/api/types/time
 github.com/docker/docker/api/types/versions
 github.com/docker/docker/api/types/volume
 github.com/docker/docker/client
-github.com/docker/docker/errdefs
 github.com/docker/docker/pkg/archive
 github.com/docker/docker/pkg/fileutils
 github.com/docker/docker/pkg/idtools
@@ -83,12 +76,18 @@ github.com/docker/go-connections/sockets
 github.com/docker/go-connections/tlsconfig
 # github.com/docker/go-units v0.4.0
 github.com/docker/go-units
+# github.com/dop251/goja v0.0.0-20200106141417-aaec0e7bde29
+github.com/dop251/goja
+github.com/dop251/goja/ast
+github.com/dop251/goja/file
+github.com/dop251/goja/parser
+github.com/dop251/goja/token
 # github.com/edsrzf/mmap-go v0.0.0-20160512033002-935e0e8a636c
 github.com/edsrzf/mmap-go
-# github.com/elastic/gosigar v0.0.0-20180330100440-37f05ff46ffa
+# github.com/elastic/gosigar v0.10.5
 github.com/elastic/gosigar
 github.com/elastic/gosigar/sys/windows
-# github.com/ethereum/go-ethereum v1.9.2
+# github.com/ethereum/go-ethereum v1.9.11
 github.com/ethereum/go-ethereum
 github.com/ethereum/go-ethereum/accounts
 github.com/ethereum/go-ethereum/accounts/abi
@@ -122,12 +121,12 @@ github.com/ethereum/go-ethereum/core/state
 github.com/ethereum/go-ethereum/core/types
 github.com/ethereum/go-ethereum/core/vm
 github.com/ethereum/go-ethereum/crypto
+github.com/ethereum/go-ethereum/crypto/blake2b
 github.com/ethereum/go-ethereum/crypto/bn256
 github.com/ethereum/go-ethereum/crypto/bn256/cloudflare
 github.com/ethereum/go-ethereum/crypto/bn256/google
 github.com/ethereum/go-ethereum/crypto/ecies
 github.com/ethereum/go-ethereum/crypto/secp256k1
-github.com/ethereum/go-ethereum/dashboard
 github.com/ethereum/go-ethereum/eth
 github.com/ethereum/go-ethereum/eth/downloader
 github.com/ethereum/go-ethereum/eth/fetcher
@@ -148,6 +147,7 @@ github.com/ethereum/go-ethereum/internal/jsre
 github.com/ethereum/go-ethereum/internal/jsre/deps
 github.com/ethereum/go-ethereum/internal/web3ext
 github.com/ethereum/go-ethereum/les
+github.com/ethereum/go-ethereum/les/checkpointoracle
 github.com/ethereum/go-ethereum/les/flowcontrol
 github.com/ethereum/go-ethereum/light
 github.com/ethereum/go-ethereum/log
@@ -160,6 +160,7 @@ github.com/ethereum/go-ethereum/node
 github.com/ethereum/go-ethereum/p2p
 github.com/ethereum/go-ethereum/p2p/discover
 github.com/ethereum/go-ethereum/p2p/discv5
+github.com/ethereum/go-ethereum/p2p/dnsdisc
 github.com/ethereum/go-ethereum/p2p/enode
 github.com/ethereum/go-ethereum/p2p/enr
 github.com/ethereum/go-ethereum/p2p/nat
@@ -182,11 +183,11 @@ github.com/fatih/color
 # github.com/fjl/memsize v0.0.0-20180418122429-ca190fb6ffbc
 github.com/fjl/memsize
 github.com/fjl/memsize/memsizeui
-# github.com/gballet/go-libpcsclite v0.0.0-20190528105824-2fd9b619dd3c
+# github.com/gballet/go-libpcsclite v0.0.0-20190607065134-2772fd86a8ff
 github.com/gballet/go-libpcsclite
-# github.com/go-ole/go-ole v1.2.4
-github.com/go-ole/go-ole
-github.com/go-ole/go-ole/oleutil
+# github.com/go-sourcemap/sourcemap v2.1.2+incompatible
+github.com/go-sourcemap/sourcemap
+github.com/go-sourcemap/sourcemap/internal/base64vlq
 # github.com/go-stack/stack v1.8.0
 github.com/go-stack/stack
 # github.com/gogo/protobuf v1.2.1
@@ -207,9 +208,9 @@ github.com/google/gofuzz
 github.com/googleapis/gnostic/OpenAPIv2
 github.com/googleapis/gnostic/compiler
 github.com/googleapis/gnostic/extensions
-# github.com/gorilla/websocket v1.4.0
+# github.com/gorilla/websocket v1.4.1-0.20190629185528-ae1634f6a989
 github.com/gorilla/websocket
-# github.com/graph-gophers/graphql-go v0.0.0-20190724201507-010347b5f9e6
+# github.com/graph-gophers/graphql-go v0.0.0-20191115155744-f33e81362277
 github.com/graph-gophers/graphql-go
 github.com/graph-gophers/graphql-go/errors
 github.com/graph-gophers/graphql-go/internal/common
@@ -227,8 +228,6 @@ github.com/graph-gophers/graphql-go/trace
 # github.com/hashicorp/golang-lru v0.5.3
 github.com/hashicorp/golang-lru
 github.com/hashicorp/golang-lru/simplelru
-# github.com/howeyc/fsnotify v0.0.0-20151003194602-f0c08ee9c607
-github.com/howeyc/fsnotify
 # github.com/huin/goupnp v0.0.0-20161224104101-679507af18f3
 github.com/huin/goupnp
 github.com/huin/goupnp/dcps/internetgateway1
@@ -239,22 +238,24 @@ github.com/huin/goupnp/soap
 github.com/huin/goupnp/ssdp
 # github.com/imdario/mergo v0.3.5
 github.com/imdario/mergo
-# github.com/influxdata/influxdb v0.0.0-20180221223340-01288bdb0883
+# github.com/influxdata/influxdb v1.2.3-0.20180221223340-01288bdb0883
 github.com/influxdata/influxdb/client
 github.com/influxdata/influxdb/models
 github.com/influxdata/influxdb/pkg/escape
-# github.com/jackpal/go-nat-pmp v0.0.0-20160603034137-1fa385a6f458
+# github.com/jackpal/go-nat-pmp v1.0.2-0.20160603034137-1fa385a6f458
 github.com/jackpal/go-nat-pmp
 # github.com/json-iterator/go v1.1.7
 github.com/json-iterator/go
 # github.com/julienschmidt/httprouter v1.2.0
 github.com/julienschmidt/httprouter
-# github.com/karalabe/usb v0.0.0-20190819132248-550797b1cad8
+# github.com/karalabe/usb v0.0.0-20190919080040-51dc0efba356
 github.com/karalabe/usb
 # github.com/konsorten/go-windows-terminal-sequences v1.0.2
 github.com/konsorten/go-windows-terminal-sequences
 # github.com/mattn/go-colorable v0.1.2
 github.com/mattn/go-colorable
+# github.com/mattn/go-ieproxy v0.0.0-20190702010315-6dee0af9227d
+github.com/mattn/go-ieproxy
 # github.com/mattn/go-isatty v0.0.8
 github.com/mattn/go-isatty
 # github.com/mattn/go-runewidth v0.0.6
@@ -263,16 +264,12 @@ github.com/mattn/go-runewidth
 github.com/modern-go/concurrent
 # github.com/modern-go/reflect2 v1.0.1
 github.com/modern-go/reflect2
-# github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826
-github.com/mohae/deepcopy
-# github.com/morikuni/aec v0.0.0-20170113033406-39771216ff4c
-github.com/morikuni/aec
 # github.com/naoina/go-stringutil v0.1.0
 github.com/naoina/go-stringutil
-# github.com/naoina/toml v0.0.0-20170918210437-9fafd6967416
+# github.com/naoina/toml v0.1.2-0.20170918210437-9fafd6967416
 github.com/naoina/toml
 github.com/naoina/toml/ast
-# github.com/olekukonko/tablewriter v0.0.0-20190409134802-7e037d187b0c
+# github.com/olekukonko/tablewriter v0.0.2-0.20190409134802-7e037d187b0c
 github.com/olekukonko/tablewriter
 # github.com/opencontainers/go-digest v1.0.0-rc1
 github.com/opencontainers/go-digest
@@ -286,13 +283,11 @@ github.com/opencontainers/runc/libcontainer/user
 github.com/opentracing/opentracing-go
 github.com/opentracing/opentracing-go/ext
 github.com/opentracing/opentracing-go/log
-# github.com/oschwald/maxminddb-golang v0.0.0-20180819230143-277d39ecb83e
-github.com/oschwald/maxminddb-golang
 # github.com/pborman/uuid v0.0.0-20170112150404-1b00554d8222
 github.com/pborman/uuid
-# github.com/peterh/liner v0.0.0-20190123174540-a2c9a5303de7
+# github.com/peterh/liner v1.1.1-0.20190123174540-a2c9a5303de7
 github.com/peterh/liner
-# github.com/pkg/errors v0.8.1
+# github.com/pkg/errors v0.9.1
 github.com/pkg/errors
 # github.com/prometheus/tsdb v0.10.0
 github.com/prometheus/tsdb/fileutil
@@ -303,14 +298,6 @@ github.com/rnsdomains/rns-go-lib/config
 github.com/rnsdomains/rns-go-lib/resolver
 github.com/rnsdomains/rns-go-lib/resolver/multi_chain_resolver
 github.com/rnsdomains/rns-go-lib/utils
-# github.com/robertkrimen/otto v0.0.0-20170205013659-6a77b7cbc37d
-github.com/robertkrimen/otto
-github.com/robertkrimen/otto/ast
-github.com/robertkrimen/otto/dbg
-github.com/robertkrimen/otto/file
-github.com/robertkrimen/otto/parser
-github.com/robertkrimen/otto/registry
-github.com/robertkrimen/otto/token
 # github.com/rs/cors v0.0.0-20160617231935-a62a804a8a00
 github.com/rs/cors
 # github.com/rs/xhandler v0.0.0-20170707052532-1eb70cf1520d
@@ -325,7 +312,7 @@ github.com/status-im/keycard-go/derivationpath
 github.com/steakknife/bloomfilter
 # github.com/steakknife/hamming v0.0.0-20180906055917-c99c65617cd3
 github.com/steakknife/hamming
-# github.com/syndtr/goleveldb v0.0.0-20190318030020-c3a204f8e965
+# github.com/syndtr/goleveldb v1.0.1-0.20190923125748-758128399b1d
 github.com/syndtr/goleveldb/leveldb
 github.com/syndtr/goleveldb/leveldb/cache
 github.com/syndtr/goleveldb/leveldb/comparer
@@ -340,7 +327,7 @@ github.com/syndtr/goleveldb/leveldb/table
 github.com/syndtr/goleveldb/leveldb/util
 # github.com/tilinna/clock v1.0.2
 github.com/tilinna/clock
-# github.com/tyler-smith/go-bip39 v0.0.0-20181017060643-dbb3b84ba2ef
+# github.com/tyler-smith/go-bip39 v1.0.1-0.20181017060643-dbb3b84ba2ef
 github.com/tyler-smith/go-bip39
 github.com/tyler-smith/go-bip39/wordlists
 # github.com/uber/jaeger-client-go v0.0.0-20180607151842-f7e0d4744fa6
@@ -369,7 +356,7 @@ github.com/vbauerster/mpb/decor
 github.com/vbauerster/mpb/internal
 # github.com/wsddn/go-ecdh v0.0.0-20161211032359-48726bab9208
 github.com/wsddn/go-ecdh
-# golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
+# golang.org/x/crypto v0.0.0-20200302210943-78000ba7a073
 golang.org/x/crypto/cast5
 golang.org/x/crypto/curve25519
 golang.org/x/crypto/openpgp
@@ -383,19 +370,19 @@ golang.org/x/crypto/ripemd160
 golang.org/x/crypto/scrypt
 golang.org/x/crypto/sha3
 golang.org/x/crypto/ssh/terminal
-# golang.org/x/net v0.0.0-20190724013045-ca1201d0de80
+# golang.org/x/net v0.0.0-20190912160710-24e19bdeb0f2
 golang.org/x/net/context
 golang.org/x/net/context/ctxhttp
 golang.org/x/net/html
 golang.org/x/net/html/atom
 golang.org/x/net/html/charset
 golang.org/x/net/http/httpguts
+golang.org/x/net/http/httpproxy
 golang.org/x/net/http2
 golang.org/x/net/http2/hpack
 golang.org/x/net/idna
 golang.org/x/net/internal/socks
 golang.org/x/net/proxy
-golang.org/x/net/websocket
 # golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
 golang.org/x/oauth2
 golang.org/x/oauth2/internal
@@ -403,11 +390,14 @@ golang.org/x/oauth2/internal
 golang.org/x/sync/errgroup
 golang.org/x/sync/singleflight
 golang.org/x/sync/syncmap
-# golang.org/x/sys v0.0.0-20190804053845-51ab0e2deafa
+# golang.org/x/sys v0.0.0-20200302150141-5c8b2ff67527
 golang.org/x/sys/cpu
 golang.org/x/sys/unix
 golang.org/x/sys/windows
+golang.org/x/sys/windows/registry
 # golang.org/x/text v0.3.2
+golang.org/x/text/cases
+golang.org/x/text/collate
 golang.org/x/text/encoding
 golang.org/x/text/encoding/charmap
 golang.org/x/text/encoding/htmlindex
@@ -418,6 +408,8 @@ golang.org/x/text/encoding/korean
 golang.org/x/text/encoding/simplifiedchinese
 golang.org/x/text/encoding/traditionalchinese
 golang.org/x/text/encoding/unicode
+golang.org/x/text/internal
+golang.org/x/text/internal/colltab
 golang.org/x/text/internal/language
 golang.org/x/text/internal/language/compact
 golang.org/x/text/internal/tag
@@ -438,23 +430,12 @@ google.golang.org/appengine/internal/log
 google.golang.org/appengine/internal/remote_api
 google.golang.org/appengine/internal/urlfetch
 google.golang.org/appengine/urlfetch
-# google.golang.org/genproto v0.0.0-20180817151627-c66870c02cf8
-google.golang.org/genproto/googleapis/rpc/status
-# google.golang.org/grpc v1.22.1
-google.golang.org/grpc/codes
-google.golang.org/grpc/connectivity
-google.golang.org/grpc/grpclog
-google.golang.org/grpc/internal
-google.golang.org/grpc/status
 # gopkg.in/inf.v0 v0.9.1
 gopkg.in/inf.v0
 # gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce
 gopkg.in/natefinch/npipe.v2
 # gopkg.in/olebedev/go-duktape.v3 v3.0.0-20190213234257-ec84240a7772
 gopkg.in/olebedev/go-duktape.v3
-# gopkg.in/sourcemap.v1 v1.0.5
-gopkg.in/sourcemap.v1
-gopkg.in/sourcemap.v1/base64vlq
 # gopkg.in/urfave/cli.v1 v1.20.0
 gopkg.in/urfave/cli.v1
 # gopkg.in/yaml.v2 v2.2.2
